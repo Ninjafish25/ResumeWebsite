@@ -1,0 +1,18 @@
+<html>
+<head>
+<META NAME=DESCRIPTION CONTENT="My Homepage :)">
+<META NAME=KEYWORDS CONTENT="homepage, web, page">
+
+<title>Tristans Website</title>
+</head>
+
+<body>
+Tristan Fish
+
+<script type = "text/javascript">
+			document.write("<h1>This is my first Javascript!!! <3</h1>");
+			</script> 
+			
+</body>
+</html>
+			

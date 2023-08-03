@@ -1,0 +1,86 @@
+<html>
+<head>
+<META NAME=DESCRIPTION CONTENT="My Homepage :)">
+<META NAME=KEYWORDS CONTENT="homepage, web, page">
+
+<title>Tristans Website</title>
+</head>
+
+
+
+
+<body>
+<?php
+$my_string = "Hello World! My name is Tristan!";
+echo "$my_string I am 25 years old and live in  ST. PETE Florida. <br/>";
+
+
+
+function writeMsg() {
+  echo "Hello world!";
+}
+
+writeMsg(); // call the function
+
+echo str("$my_string"); // outputs 12
+
+?>
+
+
+
+
+
+  <script>
+    var age = prompt("Enter your Age: ", "");
+    if (age < 23) {
+       document.write("<h1>Hello World, the current person using this script is " + age + " years old! They were born On or After the year 2000!</h1>");
+    } else {
+       document.write("<h1>Hello World, the current person using this script is " + age + " years old! They were born On or Before the year 2000!</h1>");
+    }
+  </script>
+
+<p id="demo"></p>
+
+<script>
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+</script>
+
+<script>
+var greeting;
+var hour = new Date().getHours();
+
+if (hour < 18) {
+greeting = "Good day";
+} else {
+greeting = "Good evening";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+<script type = "text/javascript">
+			document.write("<h1>Javascript is fun <3</h1>");
+			</script> 
+			
+<img src="img/pic1.png"
+	 width="400"
+	 height="400" />
+<img src="img/pic2.gif"
+	 width="400"
+	 height="400" />
+<img src="img/pic3.jpg"
+	 width="400"
+	 height="400" />
+<img src="img/photoshop.PNG"
+	 width="400"
+	 height="400" />
+	 
+</body>
+
+
+</html>
+			

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tristan Fish Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #0077b6;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #bde0fe;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #FDFD96;
+  color: black;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	position: relative;
+}
+
+.row1::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+	
+
+.side {
+  -ms-flex: 29%; 
+  flex: 29%;
+  background-color: #90e0ef;
+  padding: 20px;
+}
+
+.image__overlay {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+	background: (0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity
+}
+
+
+.image__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+
+.image__overlay > * {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}	
+	
+.image__title {
+	font-size: 2em;
+	font-weigth: bold;
+}
+
+.image__description {
+	font-size: 1.25em;
+	margin-top: 0.25em;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover > * {
+	transform: translateY(0);
+}
+
+
+.main {   
+  -ms-flex: 71%; 
+  flex: 71%;
+  background-color: #caf0f8;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+  }
+  
+
+
+.image {
+  position: relative;
+  width: 400px;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0077b6;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Feeding Tampa Bay </h1>
+  <p>A website created by me in order to hopefully inspire others.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="contactInfo.html">Contact Info</a>
+  <a href="two.html">Fake Donation Form</a>
+  <a href="pictures.html" class="right">Pictures</a>
+</div>
+
+	
+
+<div class="row">
+
+  <div class="side">
+  
+    <h2>About Me</h2>
+    <h5>Picture of me:</h5>
+	<img src="img/pic.PNG"
+	 width="400"
+	 height="500" />
+    <p>My name is Tristan and recently I have found the organization "Feeding Tampa Bay" whose mission is to help close the meal gap and connect people to resources that enable self-sufficiency. Volunteers are engaged and empowered, and dignity is served daily. </p>
+    <h3>Where am I from?</h3>
+    <p>Tampa, Florida!</p>
+	<h3>Education History:</h3>
+    <p>Obtained my Associate of Arts from Hillsborough Community College<br> then obtained my Bachelors of Science in Information Science from the University of Florida with a focus on Web Development.</p>
+	<h3> Primary Focus: Front-end & Back-end functionality development, Object-oriented Programming</h3>
+	<h3>Languages: Java, Html, Python, C++ with concentration of: Python, Html.</h3>
+	<h3>How old am I?</h3>
+    <p>25 Years Old!</p>
+  </div>
+  
+  <div class="main">
+    <img src="img/stats.PNG"
+	 width="1200"
+	 height="400" />
+  
+	<div class="image">
+	<img class="image__img" src="img/a.jpg" alt="Apple">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Apples</div>
+	 <p class="image__description"> Yummy</p></div>
+	</div>
+	
+	<div class="image">
+	 <img class="image__img" src="img/av.PNG" alt="Avocado">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Avocados</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+	 
+	<div class="image">
+	 <img class="image__img" src="img/banana.PNG" alt="Bananas">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Bananas</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+	
+	<div class="image">
+	 <img class="image__img" src="img/can.PNG" alt="Cantaloupe">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Cantaloupe</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+	
+	<div class="image">
+	 <img class="image__img" src="img/grapes.PNG" alt="Grapes">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Grapes</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+	<div class="image">
+	 <img class="image__img" src="img/orange.PNG" alt="Oranges">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Oranges</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+	 <div class="image">
+	 <img class="image__img" src="img/peach.PNG" alt="Peach">
+	 <div class="image__overlay image__overlay--blur">
+	 <div class="image__title">Peach</div>
+	 <p class="image__description"> Yummy</p></div>
+	 </div>
+
+
+	
+	
+	
+	</div>
+<br>
+<br>
+</div>
+</div>
+
+<div class="footer">
+  <h2>Thanks for taking the time to look at my website!</h2>
+</div>
+
+</body>
+</html>

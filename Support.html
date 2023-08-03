@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+var y = document.forms["myForm"]["lname"].value;
+var z = document.forms["myForm"]["state"].value;
+var w = document.forms["myForm"]["pnumber"].value;
+var v = document.forms["myForm"]["dollars"].value;
+if (x == "") {
+alert("First Name must be filled out");
+return false;
+}
+if (y == "") {
+alert("Last Name must be filled out");
+return false;
+}
+if (z == "") {
+alert("State must be filled out");
+return false;
+}
+if (w == "") {
+alert("Phone Number without special characters must be filled out");
+return false;
+}
+if (v == "") {
+alert("Donation Amount must be filled out");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="/...." onsubmit="return validateForm()" method="post">
+First Name: <input type="text" name="fname">
+Last Name: <input type="text" name="lname">
+State: <input type="text" name="state">
+Phone Number(Without dashes, commas, or Parenthesis): <input type="text" name="pnumber">
+Donation Amount in USD: <input type="INT" name="dollars">
+<input type="submit" value="Submit">
+</form>
+ <nav>
+ <a href="index.html">RETURN BACK TO HOME PAGE</a>
+ </nav>
+ 
+<p>Fill out the Form to tell Donate! </p>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div>
+
+
+</html>

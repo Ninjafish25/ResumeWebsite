@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+var x = document.forms["myForm"]["fname"].value;
+var y = document.forms["myForm"]["lname"].value;
+var z = document.forms["myForm"]["state"].value;
+var w = document.forms["myForm"]["city"].value;
+var v = document.forms["myForm"]["ffood"].value;
+if (x == "") {
+alert("First Name must be filled out");
+return false;
+}
+if (y == "") {
+alert("Last Name must be filled out");
+return false;
+}
+if (z == "") {
+alert("State must be filled out");
+return false;
+}
+if (w == "") {
+alert("City must be filled out");
+return false;
+}
+if (v == "") {
+alert("Favorite Food must be filled out");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="/...." onsubmit="return validateForm()" method="post">
+First Name: <input type="text" name="fname">
+Last Name: <input type="text" name="lname">
+State: <input type="text" name="state">
+City: <input type="text" name="city">
+Favorite Food: <input type="text" name="ffood">
+<input type="submit" value="Submit">
+</form>
+
+<p>Fill out the Form to tell me a bit about yourself! When finished, press submit!</p>
+
+</body>
+</html>

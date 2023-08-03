@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Tristan Fish Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #0077b6;
+  color: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #bde0fe;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+
+.navbar a:hover {
+  background-color: #FDFD96;
+  color: black;
+}
+
+
+.row {  
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+	position: relative;
+}
+
+.row1::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+	
+
+.side {
+  -ms-flex: 29%; 
+  flex: 29%;
+  background-color: #90e0ef;
+  padding: 20px;
+}
+
+.image__overlay {
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+	background: (0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity
+}
+
+
+.image__overlay--blur {
+	backdrop-filter: blur(5px);
+}
+
+
+.image__overlay > * {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}	
+	
+.image__title {
+	font-size: 2em;
+	font-weigth: bold;
+}
+
+.image__description {
+	font-size: 1.25em;
+	margin-top: 0.25em;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover > * {
+	transform: translateY(0);
+}
+
+
+.main {   
+  -ms-flex: 71%; 
+  flex: 71%;
+  background-color: #caf0f8;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+  }
+  
+
+
+.image {
+  position: relative;
+  width: 400px;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #0077b6;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Feeding Tampa Bay </h1>
+  <p>A website created by me in order to hopefully inspire others.</p>
+</div>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="contact.html">Contact Info</a>
+ 
+</div>
+
+	
+
+<div class="row">
+
+  <div class="side">
+  
+    <h2>About Me</h2>
+    <h5>Picture of me:</h5>
+	<img src="img/pic.PNG"
+	 width="400"
+	 height="600" />
+    <p>Motivated, detail-oriented <B>Software Engineer</B> who leverages excellent code-writing skills to develop innovative 
+		software. Successful record for minimizing system downtime, cultivating client and vendor relationships, training employees on technical- and
+		business-related affairs, and minimizing operational/technology risk. High performance in assessing/mitigating
+		IT-Cyber Security risk, and developing/operating/installing/configuring/maintaining complex hardware & software.
+		 </p>
+    <h3>Currently Residing in:</h3>
+    <p>Saint Petersburg, Florida!</p>
+	<h3>Education History:</h3>
+    <p><B>University of South Florida, Tampa, FL (2023) 
+		Bachelor of Science in Information Science, Concentration in Web Development Technology</B> <br>
+		▪ <b>Relevant Coursework:</B> Intro to Databases for IT, IT Concepts, Foundations of Cybersecurity, Prin of 
+		Information Security, Programming Concepts, IT Programming Fundamentals, IT Concepts/Info Professionals, 
+		WWW Page Design/Management, Information Architecture, Web Design Technologies, Information Behaviors, 
+		Networks and Communication, Foundations of Engineering <br>
+		<br>
+		<B>Hillsborough Community College, Ruskin, FL (2017) 
+		Associate of Arts</B></p>
+	<h3>Primary Focus: Web Development, Information Security, Data Analytics </h3>
+	<h3>Languages Used: Java, JavaScript, Html, Python, C++</h3>
+	<h3>Databases Used: MongoDB, SQL, SQLITE, MYSQL</h3>
+	<h3>Other Skills/Knowledges: Linux, VMWare, Scripts, Virtualization, UNIX, VPN, SSL, Excel</h3>
+	<h3>Roles I am Currently Seeking:</h3>
+	<p> Data Analytics, Software Developer, Information Security Officer, QA, Penetration Tester</p>
+
+   
+  </div>
+  
+  <div class="main">
+        <h2>Contact Information </h2>
+<p><b>Personal Phone Number:</b> (704)-650-8351. <br>
+
+<b> Email: </b> TristanFish3@gmail.com <br>
+</p>
+	</div>
+<br>
+<br>
+</div>
+</div>
+
+<div class="footer">
+  <h2>Dedicated, Eager to Learn, Loyal, Enthusiastic, Hard-Working</h2>
+</div>
+
+</body>
+</html>
